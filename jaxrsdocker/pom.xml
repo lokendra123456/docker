@@ -50,6 +50,7 @@
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<configuration>
+				    <repository>${docker.image.prefix}/${project.artifactId}</repository>
 					<imageName>pdockerexp</imageName>
 					<baseImage>openjdk:8</baseImage>
 					<entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
