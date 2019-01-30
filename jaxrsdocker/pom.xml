@@ -49,6 +49,7 @@
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
+				<version>1.2.0</version>
 				<configuration>
 					<imageName>pdockerexp</imageName>
 					<baseImage>openjdk:8</baseImage>
